@@ -981,6 +981,7 @@ class BertPunctuationCapitalizationDataset(Dataset):
                 logging.info(f'Features saved to {self.features_pkl}')
 
         # wait until the master process writes to the processed data files
+        print("------------>torch.distributed.is_initialized()", torch.distributed.is_initialized())
         if torch.distributed.is_initialized():
             torch.distributed.barrier()
 
