@@ -27,7 +27,7 @@ lowfreq: 0
 highfreq: 22050
 window: hann
 
-whitelist_path: "nemo_text_processing/text_normalization/en/data/whitelist.tsv"
+whitelist_path: "nemo_text_processing/text_normalization/de/data/whitelist.tsv"
 
 model:
   learn_alignment: true
@@ -222,7 +222,6 @@ trainer:
   enable_checkpointing: False # Provided by exp_manager
   logger: false # Provided by exp_manager
   log_every_n_steps: 100
-  flush_logs_every_n_steps: 1000
   check_val_every_n_epoch: 5
 
 exp_manager:
